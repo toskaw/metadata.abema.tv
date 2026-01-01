@@ -1,7 +1,7 @@
 # metadata.abema.tv
 # ABEMA 情報プロバイダ
 
-ABEMAのビデオ情報を取得するスクラッパーです。
+ABEMAのビデオ情報を取得するscraperです。
 yt-dlpで保存したファイル名を想定しています。
 
 ## 準備
