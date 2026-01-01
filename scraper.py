@@ -2,6 +2,7 @@
 import sys
 import urllib.parse
 import re
+import datetime
 
 import xbmcgui
 import xbmcplugin
@@ -132,6 +133,7 @@ elif action == 'getepisodelist':
                         + '/' + ep['thumbComponent']['filename']\
                         + '?' + ep['thumbComponent']['query']
 
+                    tags.setYear(ep['video']['releaseYear'])
                     tags.addAvailableArtwork(img, 'banner')
                     tags.addAvailableArtwork(img, 'thumb')
                     ep_url = ep['id']
@@ -168,6 +170,8 @@ elif action == 'getepisodedetails':
     tags.setPlotOutline(info['episode']['content'])
     tags.setPlot(info['episode']['content'])
     tags.setDuration(info['info']['duration'])
+    dt = datetime.datetime.fromtimestamp(info['data']['broadcastDate'])
+    tags.setFirstAired(dt.strftime('%Y-%m-%d'))
     genres = []
     genres.append(info['genre']['name'])
     if 'subGenres' in info['genre'].keys():

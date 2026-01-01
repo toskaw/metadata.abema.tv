@@ -35,7 +35,9 @@ def fetch_episodes(category, all=True):
 def fetch_episode(id):
     #https://api.p-c3-e.abema-tv.com/v1/video/programs/19-171_s1_p1?division=0&include=tvod
     data = Abema._call_api(f'v1/video/programs/{id}', "", {'division': '0', 'include': 'tvod'})
-
+    #https://api.p-c3-e.abema-tv.com/v1/video/b/programs/536-1_s1_p1
+    air =  Abema._call_api(f'v1/video/b/programs/{id}', "", None)
+    data['data'] = air['data']
     return data
 
 def fetch_seasons(series_id):
