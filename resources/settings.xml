@@ -1,0 +1,5 @@
+<settings>
+    <category label="30050">
+        <setting label="30052" id="cache" type="action" option="close" action="RunPlugin(plugin://$ID/?action=cache)"/>
+    </category>
+</settings>

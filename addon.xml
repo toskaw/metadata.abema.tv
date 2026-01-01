@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addon id="metadata.abema.tv" name="AbemaTV" version="1.0.0" provider-name="toskawa">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1" />
+    <import addon="script.module.inputstreamhelper" version="0.6.0" />
+    <import addon="script.module.requests" version="2.27.1" />
+    <import addon="xbmc.metadata" version="2.1.0"/>
+  </requires>
+
+  <extension point="xbmc.metadata.scraper.tvshows"
+             library="scraper.py"/>
+
+  <extension point="xbmc.service" library="service.py" />
+
+  <extension point="xbmc.addon.metadata">
+        <license>Unlicense</license>
+        <platform>all</platform>
+        <source>https://github.com/toskaw/</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <summary lang="en">AbemaTV Scraper</summary>
+        <description lang="en">Abema.tv + yt-dlp = ♥</description>
+    </extension>
+</addon>
