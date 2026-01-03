@@ -83,4 +83,11 @@ ABEMAのIDがシーズン番号と一致しないことがあります。
 
   シリーズIDは `26-75` シーズンIDは `26-75_s2` になります。
   無限列車編のファイルIDは`26-149_s1_p1`なのでシーズン1となってしまいますが、補正して取得します
-  
+
+<img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/tips-1.png?raw=true" alt="screenshot 1" width="400"/>  
+<img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/tips-2.png?raw=true" alt="screenshot 1" width="400"/>  
+<img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/tips-3.png?raw=true" alt="screenshot 1" width="400"/>  
+<img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/tips-4.png?raw=true" alt="screenshot 1" width="400"/>  
+<img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/tips-5.png?raw=true" alt="screenshot 1" width="400"/>  
+<img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/tips-6.png?raw=true" alt="screenshot 1" width="400"/>  
+<img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/tips-7.png?raw=true" alt="screenshot 1" width="400"/>  
