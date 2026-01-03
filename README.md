@@ -13,6 +13,7 @@ kodi の TV番組情報はファイル名に Season と Episode の番号が必�
 ```
 
 ## 使い方
+
   １． Zip形式でダウンロード
   2. システム>アドオン>ZIPファイルからインストール
   3. 動画を保存しているフォルダを選択してコンテキストメニューを表示
@@ -22,7 +23,7 @@ kodi の TV番組情報はファイル名に Season と Episode の番号が必�
 <img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/download_zip.png?raw=true" alt="screenshot 1" width="400"/>
 <img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/install_from_zip.png?raw=true" alt="screenshot 1" width="400"/>
 <img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/set_contents.png?raw=true" alt="screenshot 1" width="400"/>
-<img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/settings?raw=true" alt="screenshot 1" width="400"/>
+<img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/settings.png?raw=true" alt="screenshot 1" width="400"/>
 <img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/list.png?raw=true" alt="screenshot 1" width="400"/>
 
 ## Tips
