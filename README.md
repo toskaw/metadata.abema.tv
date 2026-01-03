@@ -14,11 +14,11 @@ kodi の TV番組情報はファイル名に Season と Episode の番号が必�
 
 ## 使い方  
   
-  1． Zip形式でダウンロード<br>
-  2. システム>アドオン>ZIPファイルからインストール<br>  
-  3. 動画を保存しているフォルダを選択してコンテキストメニューを表示<br>  
-  4. セットコンテンツ<br>  
-  5. テレビ番組,ABEMA,選択したフォルダにはテレビ番組が1件含まれています<br>  
+  1．  Zip形式でダウンロード<br>
+  2.  システム>アドオン>ZIPファイルからインストール<br>
+  3.  動画を保存しているフォルダを選択してコンテキストメニューを表示<br>
+  4.  セットコンテンツ<br>
+  5.  テレビ番組,ABEMA,選択したフォルダにはテレビ番組が1件含まれています<br>
 
 <img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/download_zip.png?raw=true" alt="screenshot 1" width="400"/>
 <img src="https://github.com/toskaw/metadata.abema.tv/blob/master/screenshots/install_from_zip.png?raw=true" alt="screenshot 1" width="400"/>
