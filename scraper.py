@@ -92,18 +92,18 @@ elif action == 'getdetails':
                 + '/' + season['thumbComponent']['filename']\
                 + '?' + season['thumbComponent']['query']
 
-            tags.addAvailableArtwork(img, 'banner')
-            tags.addAvailableArtwork(img, 'thumb')
+            tags.addAvailableArtwork(img, 'banner', season=season['sequence'])
+            tags.addAvailableArtwork(img, 'thumb', season=season['sequence'])
 
-            img = info['thumbPortraitComponent']['urlPrefix']\
-                + '/' + info['thumbPortraitComponent']['filename']\
-                + '?' + info['thumbPortraitComponent']['query']
+        img = info['thumbPortraitComponent']['urlPrefix']\
+            + '/' + info['thumbPortraitComponent']['filename']\
+            + '?' + info['thumbPortraitComponent']['query']
 
-            tags.addAvailableArtwork(img, 'poster')
-            tags.addAvailableArtwork(img, 'fanart')
-    
-            liz.setAvailableFanart([{'image': img}])
-            xbmcplugin.setResolvedUrl(handle=plugin_handle, succeeded=True, listitem=liz)
+        tags.addAvailableArtwork(img, 'poster')
+        tags.addAvailableArtwork(img, 'fanart')
+            
+        liz.setAvailableFanart([{'image': img}])
+        xbmcplugin.setResolvedUrl(handle=plugin_handle, succeeded=True, listitem=liz)
 
 elif action == 'getepisodelist':
     url = params.get('url')
