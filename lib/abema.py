@@ -1,5 +1,5 @@
-from lib.yt_dlp import YoutubeDL
-from lib.yt_dlp.extractor.abematv import AbemaTVTitleIE
+from yt_dlp import YoutubeDL
+from yt_dlp.extractor.abematv import AbemaTVTitleIE
 
 import json
 

@@ -11,6 +11,7 @@ kodi の TV番組情報はファイル名に Season と Episode の番号が必�
   <regexp>s([0-9]+)_*p([0-9]+)</regexp>
 </tvshowmatching>
 ```
+[script.module.yt-dlp](https://github.com/lekma/script.module.yt-dlp)が必要です。事前にインストールしてください<br>
 
 ## 使い方  
   
