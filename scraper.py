@@ -119,7 +119,7 @@ elif action == 'getepisodelist':
         if season_id and group['id'] != season_id :
             continue;
 
-        if group['episodeGroups'] :
+        if 'episodeGroups' in group.keys():
             for eg in group['episodeGroups'] :
                 episodes = Cache().get_or_download_list(group['id'], eg['id'])
                 for ep in episodes:
@@ -139,13 +139,19 @@ elif action == 'getepisodelist':
                     ep_url = ep['id']
                     liz.setAvailableFanart([{'image': img}])
                     xbmcplugin.addDirectoryItem(handle=plugin_handle, url=ep_url, listitem=liz, isFolder=False)
-        else :
-            episodes = Cache().get_or_download_list(group['season'], None)
+        else:
+            #import web_pdb; web_pdb.set_trace()
+            if 'season' in group.keys() :
+                season = group['season']
+            else:
+                season = group['id']
+            episodes = Cache().get_or_download_list(season, 'None')
             for ep in episodes:
                 liz = xbmcgui.ListItem(ep['episode']['title'], offscreen=True)
                 tags = liz.getVideoInfoTag()
                 tags.setTitle(ep['episode']['title'])
-                tags.setSeason(ep['season']['sequence'])
+                season_seq = int(re.match(r'.*s(\d+)_p', ep['id']).group(1))
+                tags.setSeason(season_seq)
                 tags.setEpisode(ep['episode']['number'])
                 video_id = ep['id']
                 img = f'https://image.p-c2-x.abema-tv.com/image/programs/{video_id}/thumb001.png'
